@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title>User Page</title>
+     <link rel="stylesheet" href="{{url_for('static',filename='bootstrap.min.css')}}"></link>
+    <script src="{{url_for('static',filename='jquery.min.js')}}"></script>
+    <script src="{{url_for('static',filename='bootstrap.min.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='functions.js') }}"></script>
+  </head>
+  <body>
+  	<div class="container-fluid">
+	  	<div class="row">
+	  		<div class="col-md-4 col-xs-4">
+	  			<a href='http://{{ip}}/greet.html' style="text-decoration: none;">Click Here to goto settings</a>
+	  		</div>
+	  		<div class="col-md-4 col-xs-4">
+	  			 <h1>Serveillance Bot UI</h1>
+	  		</div>
+	  		<div class="col-md-4 col-xs-4">
+	  			 <h3 style="color:red;" id="error"></h3>
+	  		</div>
+	  	</div>
+  		<div class="row">
+  			<div class="col-md-6 col-xs-6">
+		    	<center><iframe src='http://{{ip}}/flash.html' width=640 height=640></iframe></center>
+		    </div>
+		    <div class="col-md-6 col-xs-6">
+		    	<center>
+		    		<h3>Bot Camera controls</h3>
+		    		<p id="answer" hidden></p>
+		    		<div style="text-align:center;width:480px;">	
+		    			<button  style="border-radius:30px;width:60px;height:60px;"  id="bc1">UP</button><br><br>
+		    			<div class="row">
+			    			<div class="col-md-4">
+				    				<button  style="border-radius:30px;width:60px;height:60px;"  id="bc2">LEFT</button><br><br>
+				    		</div>
+				    		<div class="col-md-4">
+				    				<button  style="border-radius:30px;width:60px;height:60px;"  id="bc5">STOP</button><br><br>
+				    		</div>
+				    		<div class="col-md-4">
+			    					<button  style="border-radius:30px;width:60px;height:60px;"  id="bc3">RIGHT</button><br><br>
+		    				</div>
+		    			<button  style="border-radius:30px;width:60px;height:60px;"  id="bc4">DOWN</button><br><br>	
+					</div>
+			    </center>
+			    <center>
+			    	<h3>Bot controls</h3>
+		    		<div style="text-align:center;width:480px;">
+		    			<button  style="border-radius:30px;width:60px;height:60px;"  id="cc1">FRONT</button><br><br>
+		    			<div class="row">
+			    			<div class="col-md-4">
+				    				<button  style="border-radius:30px;width:60px;height:60px;"  id="cc2">LEFT</button><br><br>
+				    		</div>
+				    		<div class="col-md-4">
+				    				<button  style="border-radius:30px;width:60px;height:60px;"  id="cc5">STOP</button><br><br>
+				    		</div>
+				    		<div class="col-md-4">
+			    					<button  style="border-radius:30px;width:60px;height:60px;"  id="cc3">RIGHT</button><br><br>
+		    				</div>
+				    	</div>
+		    			<button  style="border-radius:30px;width:60px;height:60px;"  id="cc4">BACK</button><br><br>
+					</div>
+			    </center>
+		    </div>
+		<div>
+	</body>
+</html>

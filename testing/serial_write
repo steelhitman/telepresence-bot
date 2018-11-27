@@ -1,0 +1,4 @@
+ser = serial.Serial('/dev/tty.usbserial', 9600, timeout=0.5)
+ser.write('*99C\r\n')
+time.sleep(0.1)
+ser.close()
